@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+	
+}
+
+<div>
+	<ejs-gantt id="gantt" height="450px" treeColumnIndex="1">
+		<e-data-manager url="https://services.syncfusion.com/aspnet/production/api/GanttData"
+						adaptor="WebApiAdaptor" crossDomain="true"></e-data-manager>
+	<e-gantt-timelinesettings timelineViewMode="Week"></e-gantt-timelinesettings>
+
+	<e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" 
+	    endDate="EndDate" duration="Duration" progress="Progress"
+		dependency="Predecessor" child="SubTasks">
+	</e-gantt-taskfields>
+
+		<e-gantt-columns>
+			<e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="100">
+            </e-gantt-column>
+			<e-gantt-column field="TaskName" headerText="Task Name" width="200"></e-gantt-column>
+			<e-gantt-column field="StartDate" headerText="Start Date" width="120" 
+			format="dd.MM.yyyy"></e-gantt-column>
+			<e-gantt-column field="Duration" headerText="Duration" width="120"></e-gantt-column>
+		</e-gantt-columns>
+	</ejs-gantt>
+</div>
