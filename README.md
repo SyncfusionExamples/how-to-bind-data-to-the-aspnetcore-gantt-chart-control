@@ -1,51 +1,39 @@
 # ASP.NET Core Gantt Chart Data Binding Sample
 
-A sample ASP.NET Core Razor Pages project demonstrating remote data binding for the Syncfusion EJ2 Gantt Chart control.
+A sample ASP.NET Core Razor Pages application demonstrating how to bind the Syncfusion EJ2 Gantt Chart to a remote data service.
 
-## Overview
+## Project Overview
 
-This sample binds the Gantt Chart to remote data via `e-data-manager` and `WebApiAdaptor`. It maps task fields such as ID, name, dates, duration, progress, predecessor, and child tasks.
+The sample focuses on loading Gantt task data from a remote web API and rendering it in a Razor Pages application. It demonstrates how hierarchical task information, scheduling dates, progress values, and predecessor relationships can be visualized using the Syncfusion EJ2 Gantt Chart. The example highlights common data‑binding scenarios used in project scheduling applications.
 
 ## Features
 
-- Remote data binding with `DataManager`
-- Syncfusion EJ2 Gantt in Razor Pages
-- Task field mapping
-- Weekly timeline view
+- Remote data binding using `DataManager` and `WebApiAdaptor`
+- Syncfusion EJ2 Gantt Chart integration with Razor Pages
+- Task field mapping for ID, name, start date, end date, duration, progress, dependencies, and child tasks
+- Weekly timeline view configuration
 
-## Project details
+## Getting Started
 
-- .NET 8.0
-- `Syncfusion.EJ2.AspNet.Core` v27.1.52
-- `Pages/Index.cshtml`
-- `Program.cs`
+### Prerequisites
 
-## Prerequisites
+- .NET SDK (8.0 or later)
+- Visual Studio or a compatible ASP.NET Core development environment
 
-- .NET 8 SDK
-- Visual Studio 2022 or later
-- Syncfusion license key
+### Run the Application
 
-## Run
-
-1. Open `GanttExample.csproj` in Visual Studio.
+1. Open the project file in your development environment.
 2. Restore NuGet packages.
-3. Set the Syncfusion license key in `Program.cs`:
-
-```csharp
-Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Your License Key");
-```
-
-4. Build and run.
-5. Open the home page.
+3. Build and run the application.
+4. Open the home page to view the Gantt Chart.
 
 ## Notes
 
-- Remote endpoint: `https://services.syncfusion.com/aspnet/production/api/GanttData`
-- For local data, update the `Index.cshtml` data source.
-- `GanttDataSource` in `Pages/Index.cshtml.cs` defines the task model.
+- A Syncfusion‑hosted web API endpoint is used for demonstration purposes.
+- The data source configuration can be modified to use local collections.
+- Task models and mapping logic are defined in the Razor Pages code‑behind.
 
 ## Resources
 
-- Syncfusion docs: https://ej2.syncfusion.com/aspnetcore/documentation/gantt/data-binding
-- Example: https://ej2aspnetcore.azurewebsites.net/aspnetcore/gantt/localdata#/bootstrap5
+- Documentation: https://ej2.syncfusion.com/aspnetcore/documentation/gantt/data-binding
+- Online example: https://ej2.syncfusion.com/aspnetcore/gantt/remotedata#/bootstrap5
