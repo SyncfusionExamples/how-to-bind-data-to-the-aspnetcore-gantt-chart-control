@@ -1,6 +1,6 @@
 # ASP.NET Core Gantt Chart Data Binding Sample
 
-A sample ASP.NET Core Razor Pages application demonstrating how to bind the Syncfusion EJ2 Gantt Chart to a remote data service.
+A sample ASP.NET Core Razor Pages application demonstrating how to bind the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) to a remote data service.
 
 ## Project Overview
 
@@ -35,5 +35,7 @@ The sample focuses on loading Gantt task data from a remote web API and renderin
 
 ## Resources
 
-- Documentation: https://ej2.syncfusion.com/aspnetcore/documentation/gantt/data-binding
-- Online example: https://ej2.syncfusion.com/aspnetcore/gantt/remotedata#/bootstrap5
+- [Explore ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart)
+- [Documentation](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/data-binding)
+- [ASP.NET Core Gantt Chart Getting Started Guide](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/getting-started)
+- [ASP.NET Core Gantt Chart Live Demos](https://ej2.syncfusion.com/aspnetcore/gantt/remotedata#/bootstrap5)
